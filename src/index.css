@@ -1,7 +1,7 @@
 @tailwind base;
 :root {
     --primary: #000;
-    --secondary: #606060;
+    --secondary: #393939;
   }
   * {
     scrollbar-width: thin;
@@ -21,7 +21,7 @@
   *::-webkit-scrollbar-thumb {
     background-color: var(--secondary);
     border: 1px solid var(--primary);
-    border-radius: 5px;
+    border-radius: 10px;
   }
 @tailwind components;
 @tailwind utilities;
