@@ -60,9 +60,10 @@ const Header = () => {
   }
 
   return (
-    <div className='absolute z-10 w-full bg-gradient-to-b from-black p-2 flex justify-between'>
-      <img alt='logo' className='w-32 md:w-44' src={LOGO}/>
-      {user && (<div className='flex flex-row p-2'>
+    <div className='absolute z-10 w-full bg-gradient-to-b from-black p-2 flex flex-col md:flex-row md:justify-between '>
+      <img alt='logo' className='w-32 md:w-44 mx-auto md:mx-0' src={LOGO}/>
+      {user && (
+      <div className='flex flex-row mx-auto md:mx-0 p-2'>
         {showGptSearch && (<select onChange={handleLanguageChange} className='h-10 mr-2 rounded text-white bg-gray-700 p-2'>
           {SUPPORTED_LANGUAGES.map(lang => <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>)}
         </select>)}

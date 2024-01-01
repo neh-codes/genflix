@@ -5,9 +5,11 @@ import { BG_URL } from '../utils/constants';
 
 const GPTSearch = () => {
   return (
-    <div className='h-screen' style={{backgroundSize: 'cover', backgroundImage: `url(${BG_URL})`}}>
+    <div className='h-screen' style={{backgroundSize: 'cover', backgroundImage: `url(${BG_URL})`, backgroundPosition: 'center'}}>
+    
       <GptSearchBar/>
       <GptMovieSuggestions/>
+
     </div>
   )
 }
